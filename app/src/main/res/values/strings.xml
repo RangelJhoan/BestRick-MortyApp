@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BestRick&amp;MortyApp</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="imagen_del_navigationdrawer">Imagen del NavigationDrawer</string>
+</resources>
