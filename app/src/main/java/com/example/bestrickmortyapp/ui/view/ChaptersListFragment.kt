@@ -1,4 +1,4 @@
-package com.example.bestrickmortyapp
+package com.example.bestrickmortyapp.ui.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

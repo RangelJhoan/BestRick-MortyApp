@@ -5,11 +5,6 @@
     android:layout_height="match_parent"
     android:id="@+id/llLayout"
     android:orientation="vertical"
-    tools:context=".CharactersListFragment">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Fragment characters" />
+    tools:context=".ui.view.CharactersListFragment">
 
 </LinearLayout>

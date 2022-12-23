@@ -5,7 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.view.MainActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -22,7 +22,7 @@
             android:id="@+id/fcvContainer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:name="com.example.bestrickmortyapp.CharactersListFragment"/>
+            android:name="com.example.bestrickmortyapp.ui.view.CharactersListFragment"/>
 
     </LinearLayout>
 
