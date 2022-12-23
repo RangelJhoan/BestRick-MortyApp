@@ -26,9 +26,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.nav_characters -> Toast.makeText(this, "Item 1", Toast.LENGTH_LONG).show()
-            R.id.nav_chapters -> Toast.makeText(this, "Item 2", Toast.LENGTH_LONG).show()
-            R.id.nav_locations -> Toast.makeText(this, "Item 3", Toast.LENGTH_LONG).show()
+            R.id.nav_characters -> {
+                supportFragmentManager.beginTransaction().replace(mainBinding.fcvContainer.id, CharactersListFragment()).addToBackStack(null).commit()
+            }
+            R.id.nav_chapters -> {
+                supportFragmentManager.beginTransaction().replace(mainBinding.fcvContainer.id, ChaptersListFragment()).addToBackStack(null).commit()
+            }
+            R.id.nav_locations -> {
+                supportFragmentManager.beginTransaction().replace(mainBinding.fcvContainer.id, LocationsListFragment()).addToBackStack(null).commit()
+            }
         }
 
         mainBinding.drawerLayout.closeDrawer(GravityCompat.START)
