@@ -59,4 +59,6 @@ dependencies {
     implementation 'androidx.activity:activity-ktx:1.6.1'
     //Fragment
     implementation 'androidx.fragment:fragment-ktx:1.5.5'
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.8'
 }

@@ -3,7 +3,6 @@ package com.example.bestrickmortyapp.ui.viewmodel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.bestrickmortyapp.data.model.Character
 import com.example.bestrickmortyapp.data.model.CharacterList
 import com.example.bestrickmortyapp.domain.GetCharactersUseCase
 import kotlinx.coroutines.launch
@@ -17,8 +16,6 @@ class CharactersViewModel : ViewModel() {
     fun onCreate() {
         viewModelScope.launch {
             val result = getCharactersUseCase()
-
-            println("Clase View Model Result $result")
             characterModel.postValue(result)
         }
     }

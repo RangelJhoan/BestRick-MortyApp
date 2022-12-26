@@ -1,6 +1,6 @@
 package com.example.bestrickmortyapp.data.model
 
-data class Character(
+data class Characters(
     val id: Int,
     val name: String,
     val status: String,
