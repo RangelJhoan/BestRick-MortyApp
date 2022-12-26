@@ -13,9 +13,9 @@ class CharactersViewModel : ViewModel() {
 
     var getCharactersUseCase = GetCharactersUseCase()
 
-    fun onCreate() {
+    fun onCreate(page: Int?) {
         viewModelScope.launch {
-            val result = getCharactersUseCase()
+            val result = getCharactersUseCase(page)
             characterModel.postValue(result)
         }
     }

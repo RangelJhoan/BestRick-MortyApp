@@ -7,4 +7,6 @@
     <string name="locations">Locations</string>
     <string name="characters">Characters</string>
     <string name="name">Name</string>
+    <string name="anterior">Anterior</string>
+    <string name="siguiente">Siguiente</string>
 </resources>

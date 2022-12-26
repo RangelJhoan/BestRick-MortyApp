@@ -7,3 +7,13 @@ s
 Capp/src/main/java/com/example/bestrickmortyapp/data/model/Origin.kt,c\f\cfc9c67bb9f5c03cebfedbe9a64f91a0863a7f49
 
 Oapp/src/main/java/com/example/bestrickmortyapp/data/model/CharactersProvider.kt,7\2\722d08ead53e368196c5bef234b37be666c55996
+u
+Eapp/src/main/java/com/example/bestrickmortyapp/data/model/Location.kt,f\d\fd581194b4a77ab77b27d78973e57ba3d3ca42af
+u
+Eapp/src/main/java/com/example/bestrickmortyapp/core/RetrofitHelper.kt,9\0\908a4ab344c14397d8be7a684e726f1817c0bd54
+~
+Napp/src/main/java/com/example/bestrickmortyapp/ui/view/ChaptersListFragment.kt,6\1\612e79ae22218094aca2e5d33fabe9048e65e781
+w
+Gapp/src/main/java/com/example/bestrickmortyapp/data/model/Characters.kt,8\5\855b6b0be5e98cf268f979a6f2d8056e158ef2e0
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
