@@ -1,6 +1,6 @@
 package com.example.bestrickmortyapp.data.model
 
-data class CharacterList(
+data class CharactersResponse(
     val info: Info,
     val results: List<Characters>
 )

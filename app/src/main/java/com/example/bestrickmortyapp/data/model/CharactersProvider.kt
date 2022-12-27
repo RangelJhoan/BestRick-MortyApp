@@ -2,6 +2,6 @@ package com.example.bestrickmortyapp.data.model
 
 class CharactersProvider {
     companion object {
-        lateinit var characters: CharacterList
+        lateinit var characters: CharactersResponse
     }
 }
