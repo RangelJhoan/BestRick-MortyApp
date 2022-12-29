@@ -10,14 +10,16 @@ import kotlinx.coroutines.launch
 class CharactersViewModel : ViewModel() {
 
     val characterModel = MutableLiveData<CharactersResponse>()
+    val isLoading = MutableLiveData<Boolean>()
 
     var getCharactersUseCase = GetCharactersUseCase()
 
     fun onCreate(page: Int?) {
         viewModelScope.launch {
+            isLoading.postValue(true)
             val result = getCharactersUseCase(page)
             characterModel.postValue(result)
+            isLoading.postValue(false)
         }
     }
-
 }
