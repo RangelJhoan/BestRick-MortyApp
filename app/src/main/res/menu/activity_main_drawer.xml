@@ -8,7 +8,7 @@
         <item
             android:id="@+id/nav_chapters"
             android:icon="@drawable/ic_baseline_movie_filter_24"
-            android:title="@string/chapters" />
+            android:title="@string/episodes" />
         <item
             android:id="@+id/nav_locations"
             android:icon="@drawable/ic_baseline_location_on_24"

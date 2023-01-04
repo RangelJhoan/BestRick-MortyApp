@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 supportFragmentManager.beginTransaction().replace(mainBinding.fcvContainer.id, CharactersListFragment()).addToBackStack(null).commit()
             }
             R.id.nav_chapters -> {
-                supportFragmentManager.beginTransaction().replace(mainBinding.fcvContainer.id, ChaptersListFragment()).addToBackStack(null).commit()
+                supportFragmentManager.beginTransaction().replace(mainBinding.fcvContainer.id, EpisodesListFragment()).addToBackStack(null).commit()
             }
             R.id.nav_locations -> {
                 supportFragmentManager.beginTransaction().replace(mainBinding.fcvContainer.id, LocationsListFragment()).addToBackStack(null).commit()

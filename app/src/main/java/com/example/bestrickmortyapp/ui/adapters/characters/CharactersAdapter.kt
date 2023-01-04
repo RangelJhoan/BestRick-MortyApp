@@ -1,12 +1,12 @@
-package com.example.bestrickmortyapp.ui.adapters
+package com.example.bestrickmortyapp.ui.adapters.characters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bestrickmortyapp.R
-import com.example.bestrickmortyapp.data.model.Characters
+import com.example.bestrickmortyapp.data.model.Character
 
-class CharactersAdapter(val charactersList: List<Characters>):RecyclerView.Adapter<CharactersViewHolder>(){
+class CharactersAdapter(val charactersList: List<Character>):RecyclerView.Adapter<CharactersViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharactersViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         return CharactersViewHolder(layoutInflater.inflate(R.layout.item_characters, parent, false))

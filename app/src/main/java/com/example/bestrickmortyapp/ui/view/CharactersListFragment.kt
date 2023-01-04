@@ -5,13 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ProgressBar
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.bestrickmortyapp.databinding.FragmentCharactersListBinding
-import com.example.bestrickmortyapp.ui.adapters.CharactersAdapter
+import com.example.bestrickmortyapp.ui.adapters.characters.CharactersAdapter
 import com.example.bestrickmortyapp.ui.viewmodel.CharactersViewModel
 
 class CharactersListFragment : Fragment() {

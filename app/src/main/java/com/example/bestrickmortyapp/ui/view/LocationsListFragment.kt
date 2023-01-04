@@ -26,6 +26,6 @@ class LocationsListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Toast.makeText(context, "Hola, soy el fragment de ubicaciones", Toast.LENGTH_LONG).show()
+
     }
 }

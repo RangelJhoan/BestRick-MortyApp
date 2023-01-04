@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/light_gray"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/bordes_textview"
+            android:padding="10dp"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/tvAirDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/bordes_textview"
+            android:padding="10dp"
+            android:text="@string/air_date" />
+
+        <TextView
+            android:id="@+id/tvEpisode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/bordes_textview"
+            android:padding="10dp"
+            android:text="@string/episodes" />
+
+        <TextView
+            android:id="@+id/tvCreated"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/bordes_textview"
+            android:padding="10dp"
+            android:text="@string/created" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

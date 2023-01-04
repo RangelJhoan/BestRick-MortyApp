@@ -3,10 +3,12 @@
     <string name="navigation_drawer_open">Open</string>
     <string name="navigation_drawer_close">Close</string>
     <string name="imagen_del_navigationdrawer">Imagen del NavigationDrawer</string>
-    <string name="chapters">Chapters</string>
+    <string name="episodes">Episodes</string>
     <string name="locations">Locations</string>
     <string name="characters">Characters</string>
     <string name="name">Name</string>
     <string name="anterior">Anterior</string>
     <string name="siguiente">Siguiente</string>
+    <string name="air_date">Air Date</string>
+    <string name="created">Created</string>
 </resources>
