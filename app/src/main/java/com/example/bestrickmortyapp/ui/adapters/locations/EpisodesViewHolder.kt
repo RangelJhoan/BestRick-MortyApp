@@ -13,9 +13,13 @@ class EpisodesViewHolder(view: View): RecyclerView.ViewHolder(view) {
     fun bind(episode: Episode){
         val dateFormatter = SimpleDateFormat("dd-MM-yyyy")
         episodeListBinding.tvName.text = episode.name
+        episodeListBinding.tvName.setLines(2)
         episodeListBinding.tvAirDate.text = episode.airDate
+        episodeListBinding.tvAirDate.setLines(2)
         episodeListBinding.tvEpisode.text = episode.episode
+        episodeListBinding.tvEpisode.setLines(2)
         episodeListBinding.tvCreated.text = dateFormatter.format(episode.created)
+        episodeListBinding.tvCreated.setLines(2)
     }
 
 }

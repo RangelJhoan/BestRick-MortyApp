@@ -33,6 +33,12 @@ class CharactersListFragment : Fragment() {
         charactersViewModel.onCreate(page)
         page = 1
 
+        subscribeToObservers()
+        setupButtons()
+
+    }
+
+    private fun subscribeToObservers() {
         charactersViewModel.characterModel.observe(viewLifecycleOwner, Observer { characterList ->
             charactersListBinding.btnPrevious.isEnabled = characterList.info.prev != null
             charactersListBinding.btnNext.isEnabled = characterList.info.next != null
@@ -44,7 +50,9 @@ class CharactersListFragment : Fragment() {
         charactersViewModel.isLoading.observe(viewLifecycleOwner, Observer { isLoading ->
             charactersListBinding.pbProgress.isVisible = isLoading
         })
+    }
 
+    private fun setupButtons() {
         charactersListBinding.btnPrevious.setOnClickListener {
             page = page?.dec()
             charactersViewModel.onCreate(page)
@@ -54,7 +62,6 @@ class CharactersListFragment : Fragment() {
             page = page?.inc()
             charactersViewModel.onCreate(page)
         }
-
     }
 
 }

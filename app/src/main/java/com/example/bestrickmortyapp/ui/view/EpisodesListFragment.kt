@@ -34,18 +34,27 @@ class EpisodesListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         episodesViewModel.onCreate(page)
         page = 1
-        episodesViewModel.episodeModel.observe(viewLifecycleOwner, Observer {episodesResponse ->
+
+        subscribeToObservers()
+        setupButtons()
+
+    }
+
+    private fun subscribeToObservers() {
+        episodesViewModel.episodeModel.observe(viewLifecycleOwner) { episodesResponse ->
             episodesListBinding.btnPrevious.isEnabled = episodesResponse.info.prev!=null
             episodesListBinding.btnNext.isEnabled = !episodesResponse.info.next.isNullOrEmpty()
             adapter = EpisodesAdapter(episodesResponse.results)
             episodesListBinding.rvEpisodes.layoutManager = LinearLayoutManager(context)
             episodesListBinding.rvEpisodes.adapter = adapter
-        })
+        }
 
-        episodesViewModel.isLoading.observe(viewLifecycleOwner, Observer {
+        episodesViewModel.isLoading.observe(viewLifecycleOwner) {
             episodesListBinding.pbProgress.isVisible = it
-        })
+        }
+    }
 
+    private fun setupButtons() {
         episodesListBinding.btnPrevious.setOnClickListener {
             page = page?.dec()
             episodesViewModel.onCreate(page)
@@ -55,6 +64,5 @@ class EpisodesListFragment : Fragment() {
             page = page?.inc()
             episodesViewModel.onCreate(page)
         }
-
     }
 }
