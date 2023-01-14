@@ -39,17 +39,17 @@ class CharactersListFragment : Fragment() {
     }
 
     private fun subscribeToObservers() {
-        charactersViewModel.characterModel.observe(viewLifecycleOwner, Observer { characterList ->
+        charactersViewModel.characterModel.observe(viewLifecycleOwner) {characterList ->
             charactersListBinding.btnPrevious.isEnabled = characterList.info.prev != null
             charactersListBinding.btnNext.isEnabled = characterList.info.next != null
             adapter = CharactersAdapter(characterList.results)
             charactersListBinding.rvCharacters.layoutManager = GridLayoutManager(context, 2)
             charactersListBinding.rvCharacters.adapter = adapter
-        })
+        }
 
-        charactersViewModel.isLoading.observe(viewLifecycleOwner, Observer { isLoading ->
+        charactersViewModel.isLoading.observe(viewLifecycleOwner) { isLoading ->
             charactersListBinding.pbProgress.isVisible = isLoading
-        })
+        }
     }
 
     private fun setupButtons() {

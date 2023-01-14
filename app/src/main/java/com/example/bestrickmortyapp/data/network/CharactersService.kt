@@ -14,4 +14,11 @@ class CharactersService {
             response.body()
         }
     }
+
+    suspend fun getCharacterImage(id: Int): String{
+        return withContext(Dispatchers.IO){
+            val response = retrofit.create(CharactersApiClient::class.java).getCharacter(id)
+            response.body()?.image ?: ""
+        }
+    }
 }

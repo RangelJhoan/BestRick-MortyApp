@@ -5,14 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import com.example.bestrickmortyapp.databinding.FragmentEpisodesListBinding
-import com.example.bestrickmortyapp.ui.adapters.locations.EpisodesAdapter
+import com.example.bestrickmortyapp.ui.adapters.episodes.EpisodesAdapter
 import com.example.bestrickmortyapp.ui.viewmodel.EpisodesViewModel
 
 class EpisodesListFragment : Fragment() {

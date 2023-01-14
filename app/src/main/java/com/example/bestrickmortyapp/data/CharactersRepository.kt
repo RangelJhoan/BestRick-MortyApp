@@ -12,4 +12,9 @@ class CharactersRepository {
         CharactersProvider.characters = response!!
         return response
     }
+
+    suspend fun getCharacterImage(id: Int): String {
+        val response = api.getCharacterImage(id)
+        return response
+    }
 }

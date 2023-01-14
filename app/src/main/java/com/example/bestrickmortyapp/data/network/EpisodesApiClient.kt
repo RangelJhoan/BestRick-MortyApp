@@ -1,6 +1,5 @@
 package com.example.bestrickmortyapp.data.network
 
-import com.example.bestrickmortyapp.data.model.Episode
 import com.example.bestrickmortyapp.data.model.EpisodesResponse
 import retrofit2.Response
 import retrofit2.http.GET

@@ -1,4 +1,4 @@
-package com.example.bestrickmortyapp.ui.adapters.locations
+package com.example.bestrickmortyapp.ui.adapters.episodes
 
 import android.os.Build
 import android.view.LayoutInflater
