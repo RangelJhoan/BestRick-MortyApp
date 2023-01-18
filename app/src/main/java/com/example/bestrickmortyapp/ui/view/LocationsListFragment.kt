@@ -51,6 +51,8 @@ class LocationsListFragment : Fragment() {
 
     private fun subscribeToObservers() {
         locationsViewModel.locationsModel.observe(viewLifecycleOwner){ locationResponse ->
+            locationListBinding.btnPrevious.isEnabled = locationResponse.info.prev != null
+            locationListBinding.btnNext.isEnabled = !locationResponse.info.next.isNullOrEmpty()
             locationListBinding.rvLocations.layoutManager = GridLayoutManager(context, 2)
             adapter = LocationAdapter(locationResponse.results)
             locationListBinding.rvLocations.adapter = adapter

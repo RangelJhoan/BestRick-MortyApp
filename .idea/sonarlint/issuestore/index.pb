@@ -25,8 +25,6 @@ Iapp/src/main/java/com/example/bestrickmortyapp/data/EpisodesRepository.kt,6\3\
 Kapp/src/main/java/com/example/bestrickmortyapp/domain/GetEpisodesUseCase.kt,c\f\cf4325ff7da827cc2c24d8f0945c61353f0f646a
 €
 Papp/src/main/java/com/example/bestrickmortyapp/ui/viewmodel/EpisodesViewModel.kt,1\8\1832b848ab16d9b0252be89d50b5eb0accce6c79
-q
-Aapp/src/main/java/com/example/bestrickmortyapp/data/model/Info.kt,f\e\fe705f07cf25b3bacda1eee594b0263cd006ef9c
 
 Oapp/src/main/java/com/example/bestrickmortyapp/data/model/CharactersResponse.kt,4\c\4cef8bb122b1be16b00096ea126dbdf5d4dcc73c
 €
@@ -59,3 +57,11 @@ v
 Fapp/src/main/java/com/example/bestrickmortyapp/data/model/Character.kt,2\1\219b278a17b59b66a20f2b99cb37a3c4ce95878f
 t
 Dapp/src/main/java/com/example/bestrickmortyapp/data/model/Episode.kt,3\f\3fb5e39c5169934a0015481f4453ab5881f665ea
+‡
+Wapp/src/main/java/com/example/bestrickmortyapp/ui/adapters/locations/LocationAdapter.kt,5\c\5c7136114db5f0640866273e3a72a5ecc6bc7ffe
+~
+Napp/src/main/java/com/example/bestrickmortyapp/data/model/LocationsResponse.kt,e\f\efd59949fb1d805c885e9b9eda89fefa68af91b1
+v
+Fapp/src/main/java/com/example/bestrickmortyapp/data/model/Locations.kt,1\4\14e8127e7c99b3cba840baeeacbbf98f027fad0f
+€
+Papp/src/main/java/com/example/bestrickmortyapp/ui/view/CharactersListFragment.kt,3\0\3030299c46a6797fa4a484bbc2dd14f111d10e80
